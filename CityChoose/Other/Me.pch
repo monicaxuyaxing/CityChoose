@@ -1,0 +1,35 @@
+//
+//  Me.pch
+//  CityChoose
+//
+//  Created by 亚杏 on 16/12/9.
+//  Copyright © 2016年 oms. All rights reserved.
+//
+
+#ifndef Me_pch
+#define Me_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MJExtension.h"
+#import "UIView+XYXExtension.h"
+#import "MeConst.h"
+
+
+
+
+//获取手机屏幕的宽和高
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+
+
+//颜色相关
+#define XYXColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define XYXColor(r,g,b) XYXColorA((r),(g),(b),1.0)
+#define XYXRandomColor XYXColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+#define XYXCommonBgColor XYXColor(206, 206, 206);
+
+
+
+
+#endif /* Me_pch */
